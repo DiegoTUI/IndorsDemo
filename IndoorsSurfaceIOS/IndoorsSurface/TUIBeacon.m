@@ -27,7 +27,7 @@
     return self;
 }
 
-- (BOOL)feedWithAccuracy:(CLProximity)accuracy
+- (BOOL)feedWithAccuracy:(CLLocationAccuracy)accuracy
 {
     _check = true;
     if (accuracy > -1.0) //valid accuracy
@@ -36,13 +36,18 @@
         _count = 0;
         return false;
     }
-    // invalid accuracy
+    // invalid accuracy 
     _count++;
     if (_count >= MAX_COUNT)
     {
         return true;
     }
     return false;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@: %d", _minor, _accuracy];
 }
 
 @end

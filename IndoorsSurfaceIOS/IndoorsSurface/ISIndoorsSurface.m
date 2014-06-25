@@ -251,6 +251,7 @@
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
     NSLog(@"did range beacons: %lu", (unsigned long)beacons.count);
+    NSLog(@"%@", beacons);
     
     [_beaconManager feedWithBeacons:beacons];
     

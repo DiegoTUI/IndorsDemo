@@ -13,13 +13,13 @@
 
 @property (strong, nonatomic) NSNumber *minor;
 
-@property (nonatomic) CLProximity accuracy;
+@property (nonatomic) CLLocationAccuracy accuracy;
 
 @property (nonatomic) NSInteger count;
 
 @property (nonatomic) BOOL check;
 
 
-- (BOOL)feedWithAccuracy:(CLProximity)accuracy;
+- (BOOL)feedWithAccuracy:(CLLocationAccuracy)accuracy;
 
 @end

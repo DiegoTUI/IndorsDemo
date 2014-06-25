@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
+            timestampString = "425318038.085856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "-indoorsSurfaceLocationManager:updateUserPosition:"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-indoorsSurfaceLocationManager:updateFloorLevel:name:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
+            timestampString = "425380444.732132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
-            landmarkName = "@implementation ISIndoorsSurface"
-            landmarkType = "3">
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "-updateUserPosition:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,13 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
+            timestampString = "425380444.732132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
-            landmarkName = "@implementation ISIndoorsSurface"
-            landmarkType = "3">
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "-locationManager:didEnterRegion:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,13 +90,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
+            timestampString = "425380444.732132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
-            landmarkName = "@implementation ISIndoorsSurface"
-            landmarkType = "3">
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "-locationManager:didExitRegion:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,43 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
+            timestampString = "425400003.986284"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
-            landmarkName = "-userPositionFromBeacons:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425391627.966985"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
-            landmarkName = "-updateUserPosition:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
-            timestampString = "425393601.966482"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "-locationManager:didRangeBeacons:inRegion:"
             landmarkType = "5">
          </BreakpointContent>
@@ -169,29 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../IndoorsSurfaceIOS/IndoorsSurface/TUIBeaconManager.m"
-            timestampString = "425394371.74283"
+            filePath = "../IndoorsSurfaceIOS/IndoorsSurface/ISIndoorsSurface.m"
+            timestampString = "425376570.865088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-feedWithBeacons:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../IndoorsSurfaceIOS/IndoorsSurface/TUIBeaconManager.m"
-            timestampString = "425393662.592457"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-feedWithBeacons:"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "-weakSignalInIndoorsSurfaceLocationManager:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

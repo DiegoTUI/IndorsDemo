@@ -69,6 +69,8 @@
         index++;
     }
     [_beacons removeObjectsAtIndexes:discardedBeacons];
+    
+    //NSLog(@"beacons: %@", _beacons);
 }
 
 - (IDSCoordinate *)userLocation
@@ -86,18 +88,21 @@
     }
     // More than one beacon. Sort them
     NSArray *sortedBeacons = [_beacons sortedArrayUsingComparator:^NSComparisonResult(TUIBeacon *a, TUIBeacon *b) {
-        if (a.accuracy > b.accuracy)
+        if (a.accuracy < b.accuracy)
         {
             return NSOrderedAscending;
         }
         return NSOrderedDescending;
     }];
     
-    CLProximity accuracy1 = [(TUIBeacon *)sortedBeacons[0] accuracy];
-    CLProximity accuracy2 = [(TUIBeacon *)sortedBeacons[1] accuracy];
+    CLLocationAccuracy accuracy1 = [(TUIBeacon *)sortedBeacons[0] accuracy];
+    CLLocationAccuracy accuracy2 = [(TUIBeacon *)sortedBeacons[1] accuracy];
     
-    CGPoint beaconLocation1 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[0] minor] stringValue]];
-    CGPoint beaconLocation2 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[1] minor] stringValue]];
+    CGPoint beaconLocation1 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(TUIBeacon *)sortedBeacons[0] minor] stringValue]];
+    CGPoint beaconLocation2 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(TUIBeacon *)sortedBeacons[1] minor] stringValue]];
+    
+    NSLog(@"beacon1 - minor: %@ - accuracy: %f - location: %@", [(TUIBeacon *)sortedBeacons[0] minor], accuracy1, NSStringFromCGPoint(beaconLocation1));
+    NSLog(@"beacon2 - minor: %@ - accuracy: %f - location: %@", [(TUIBeacon *)sortedBeacons[1] minor], accuracy2, NSStringFromCGPoint(beaconLocation2));
     
     NSInteger x = ((accuracy1 * beaconLocation2.x) + (accuracy2 * beaconLocation1.x)) / (accuracy1 + accuracy2);
     NSInteger y = ((accuracy1 * beaconLocation2.y) + (accuracy2 * beaconLocation1.y)) / (accuracy1 + accuracy2);
