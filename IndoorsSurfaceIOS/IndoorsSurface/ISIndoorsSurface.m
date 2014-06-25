@@ -217,8 +217,10 @@
         IDSCoordinate *snappedPosition = [[Indoors instance] snapPosition:userPosition toRoute:self.routingPath];
         //            NSLog(@"Original pos: %d, %d, %d", userPosition.x, userPosition.y, userPosition.z);
         //            NSLog(@"Snapped  pos: %d, %d, %d", snappedPosition.x, snappedPosition.y, snappedPosition.z);
+        NSLog(@"updated user position ROUTE - x: %d - y: %d", userPosition.x, userPosition.y);
         [self.mapScrollView setUserPosition:snappedPosition];
     } else {
+        //NSLog(@"updated user position - x: %d - y: %d", userPosition.x, userPosition.y);
         [self.mapScrollView setUserPosition:userPosition];
     }
     
@@ -272,6 +274,10 @@
     }];
     NSInteger rssi1 = -[(CLBeacon *)sortedBeacons[0] rssi];
     NSInteger rssi2 = -[(CLBeacon *)sortedBeacons[1] rssi];
+    
+    NSLog(@"rssi1-%@: %d - %f", [(CLBeacon *)sortedBeacons[0] minor], rssi1, [(CLBeacon *)sortedBeacons[0] accuracy]);
+    NSLog(@"rssi2-%@: %d - %f", [(CLBeacon *)sortedBeacons[1] minor], rssi2, [(CLBeacon *)sortedBeacons[1] accuracy]);
+    
     
     CGPoint beaconLocation1 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[0] minor] stringValue]];
     CGPoint beaconLocation2 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[1] minor] stringValue]];

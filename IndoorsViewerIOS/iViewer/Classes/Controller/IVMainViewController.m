@@ -740,7 +740,7 @@
 }
 
 - (void)indoorsSurfaceLocationManager:(IndoorsSurfaceLocationManager*)mananger updateUserOrientation:(float)orientation {
-    NSLog(@"Orientation changed. SurfaceView Frame: %@", NSStringFromCGRect(self.surfaceView.frame));
+    //NSLog(@"Orientation changed. SurfaceView Frame: %@", NSStringFromCGRect(self.surfaceView.frame));
     //self.surfaceView.mapScrollView.transform = CGAffineTransformMakeRotation(orientation);
 }
 
