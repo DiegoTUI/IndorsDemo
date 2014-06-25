@@ -12,6 +12,7 @@
 #import <Indoors/IDSFloor.h>
 #import <CoreLocation/CoreLocation.h>
 #import "TUIBeaconsPlan.h"
+#import "TUIBeaconManager.h"
 
 @interface ISIndoorsSurface() <ISMapScrollViewDelegate, IndoorsSurfaceLocationManagerDelegate, CLLocationManagerDelegate>
 @property (nonatomic, strong) ISMapScrollView* mapScrollView;
@@ -26,6 +27,8 @@
 // Beacons
 @property (strong, nonatomic) CLBeaconRegion *beaconRegion;
 @property (strong, nonatomic) CLLocationManager *beaconLocationManager;
+
+@property (strong, nonatomic) TUIBeaconManager *beaconManager;
 
 @end
 
@@ -42,6 +45,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupView];
+        _beaconManager = [[TUIBeaconManager alloc] init];
     }
     return self;
 }
@@ -145,6 +149,7 @@
     _beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:11211 identifier:@"demoRegion"];
     
     [_beaconLocationManager startRangingBeaconsInRegion:_beaconRegion];
+    
 }
 
 #pragma mark - UI Setup
@@ -220,7 +225,7 @@
         NSLog(@"updated user position ROUTE - x: %d - y: %d", userPosition.x, userPosition.y);
         [self.mapScrollView setUserPosition:snappedPosition];
     } else {
-        //NSLog(@"updated user position - x: %d - y: %d", userPosition.x, userPosition.y);
+        NSLog(@"updated user position - x: %d - y: %d", userPosition.x, userPosition.y);
         [self.mapScrollView setUserPosition:userPosition];
     }
     
@@ -245,9 +250,11 @@
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
-    NSLog(@"did range beacons: %d", beacons.count);
+    NSLog(@"did range beacons: %lu", (unsigned long)beacons.count);
     
-    [self updateUserPosition:[self userPositionFromBeacons:beacons]];
+    [_beaconManager feedWithBeacons:beacons];
+    
+    [self updateUserPosition:[_beaconManager userLocation]];
 }
 
 - (IDSCoordinate *)userPositionFromBeacons:(NSArray *)beacons

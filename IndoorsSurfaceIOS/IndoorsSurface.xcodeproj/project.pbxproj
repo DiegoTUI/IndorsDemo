@@ -25,6 +25,10 @@
 		760676971959B2ED00FE1527 /* ISIndoorsSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA72D183B736500C08A43 /* ISIndoorsSurface.m */; };
 		7606769E1959B6A200FE1527 /* TUIBeaconsPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = 7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */; };
 		7606769F1959B6A200FE1527 /* TUIBeaconsPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */; };
+		7678FB39195ADFCF007DF966 /* TUIBeacon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7678FB37195ADFCF007DF966 /* TUIBeacon.h */; };
+		7678FB3A195ADFCF007DF966 /* TUIBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7678FB38195ADFCF007DF966 /* TUIBeacon.m */; };
+		7678FB3D195AE187007DF966 /* TUIBeaconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7678FB3B195AE187007DF966 /* TUIBeaconManager.h */; };
+		7678FB3E195AE187007DF966 /* TUIBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7678FB3C195AE187007DF966 /* TUIBeaconManager.m */; };
 		B42382E01919302600FEB52B /* ISMapScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA72E183B736500C08A43 /* ISMapScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B42382E31919303200FEB52B /* ISAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA716183B72D600C08A43 /* ISAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4863ECE183D234200A77E07 /* ISAnnotationDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA715183B72D600C08A43 /* ISAnnotationDetailsView.m */; };
@@ -87,6 +91,10 @@
 /* Begin PBXFileReference section */
 		7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIBeaconsPlan.h; path = IndoorsSurface/TUIBeaconsPlan.h; sourceTree = SOURCE_ROOT; };
 		7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIBeaconsPlan.m; path = IndoorsSurface/TUIBeaconsPlan.m; sourceTree = SOURCE_ROOT; };
+		7678FB37195ADFCF007DF966 /* TUIBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIBeacon.h; path = IndoorsSurface/TUIBeacon.h; sourceTree = SOURCE_ROOT; };
+		7678FB38195ADFCF007DF966 /* TUIBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIBeacon.m; path = IndoorsSurface/TUIBeacon.m; sourceTree = SOURCE_ROOT; };
+		7678FB3B195AE187007DF966 /* TUIBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIBeaconManager.h; path = IndoorsSurface/TUIBeaconManager.h; sourceTree = SOURCE_ROOT; };
+		7678FB3C195AE187007DF966 /* TUIBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIBeaconManager.m; path = IndoorsSurface/TUIBeaconManager.m; sourceTree = SOURCE_ROOT; };
 		B4DDA700183B70D400C08A43 /* IndoorsServiceCallbackImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsServiceCallbackImp.h; path = IndoorsSurface/IndoorsServiceCallbackImp.h; sourceTree = SOURCE_ROOT; };
 		B4DDA701183B70D400C08A43 /* IndoorsServiceCallbackImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndoorsServiceCallbackImp.m; path = IndoorsSurface/IndoorsServiceCallbackImp.m; sourceTree = SOURCE_ROOT; };
 		B4DDA702183B70D400C08A43 /* IndoorsSurfaceBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsSurfaceBuilder.h; path = IndoorsSurface/IndoorsSurfaceBuilder.h; sourceTree = SOURCE_ROOT; };
@@ -252,6 +260,10 @@
 			children = (
 				7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */,
 				7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */,
+				7678FB37195ADFCF007DF966 /* TUIBeacon.h */,
+				7678FB38195ADFCF007DF966 /* TUIBeacon.m */,
+				7678FB3B195AE187007DF966 /* TUIBeaconManager.h */,
+				7678FB3C195AE187007DF966 /* TUIBeaconManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,7 +363,9 @@
 			files = (
 				B4DDA787183D161000C08A43 /* IndoorsSurfaceBuilder.h in Headers */,
 				B4DDA788183D161000C08A43 /* IndoorsSurfaceDelegates.h in Headers */,
+				7678FB3D195AE187007DF966 /* TUIBeaconManager.h in Headers */,
 				B42382E31919303200FEB52B /* ISAnnotationView.h in Headers */,
+				7678FB39195ADFCF007DF966 /* TUIBeacon.h in Headers */,
 				B4DDA789183D161000C08A43 /* IndoorsSurfaceEnums.h in Headers */,
 				B4DDA78D183D165300C08A43 /* IndoorsSurfaceLocationManager.h in Headers */,
 				B4DDA78C183D163200C08A43 /* ISIndoorsSurface.h in Headers */,
@@ -446,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7678FB3A195ADFCF007DF966 /* TUIBeacon.m in Sources */,
 				B4863ED3183D235400A77E07 /* ISUserLocationAccuracyView.m in Sources */,
 				B4863EDB183D238E00A77E07 /* IndoorsSurfaceLocationManager.m in Sources */,
 				B4863ED9183D238A00A77E07 /* IndoorsSurfaceBuilder.m in Sources */,
@@ -453,6 +468,7 @@
 				760676971959B2ED00FE1527 /* ISIndoorsSurface.m in Sources */,
 				7606769F1959B6A200FE1527 /* TUIBeaconsPlan.m in Sources */,
 				B4863EDA183D238C00A77E07 /* IndoorsServiceCallbackImp.m in Sources */,
+				7678FB3E195AE187007DF966 /* TUIBeaconManager.m in Sources */,
 				B4863ED2183D234F00A77E07 /* ISUserAnnotationView.m in Sources */,
 				B4863ED5183D236900A77E07 /* ISMapView.m in Sources */,
 				B4863ED6183D236F00A77E07 /* ISMapRoutingView.m in Sources */,
