@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B4E826DA183138A000383768 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4E826DB183138A000383768 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				B4E826E0183138CB00383768 /* Build Framework */,
+			);
+			dependencies = (
+				B4E826DF183138A800383768 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		760676971959B2ED00FE1527 /* ISIndoorsSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA72D183B736500C08A43 /* ISIndoorsSurface.m */; };
+		7606769E1959B6A200FE1527 /* TUIBeaconsPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = 7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */; };
+		7606769F1959B6A200FE1527 /* TUIBeaconsPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */; };
+		B42382E01919302600FEB52B /* ISMapScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA72E183B736500C08A43 /* ISMapScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B42382E31919303200FEB52B /* ISAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA716183B72D600C08A43 /* ISAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4863ECE183D234200A77E07 /* ISAnnotationDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA715183B72D600C08A43 /* ISAnnotationDetailsView.m */; };
+		B4863ED1183D234700A77E07 /* ISAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA717183B72D600C08A43 /* ISAnnotationView.m */; };
+		B4863ED2183D234F00A77E07 /* ISUserAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA721183B72FB00C08A43 /* ISUserAnnotationView.m */; };
+		B4863ED3183D235400A77E07 /* ISUserLocationAccuracyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA723183B72FB00C08A43 /* ISUserLocationAccuracyView.m */; };
+		B4863ED4183D235E00A77E07 /* ISMapScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA72F183B736500C08A43 /* ISMapScrollView.m */; };
+		B4863ED5183D236900A77E07 /* ISMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA731183B736500C08A43 /* ISMapView.m */; };
+		B4863ED6183D236F00A77E07 /* ISMapRoutingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA739183B737900C08A43 /* ISMapRoutingView.m */; };
+		B4863ED7183D238000A77E07 /* ISZoneAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA729183B731200C08A43 /* ISZoneAnnotation.m */; };
+		B4863ED8183D238400A77E07 /* ISCallOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA711183B72AB00C08A43 /* ISCallOutView.m */; };
+		B4863ED9183D238A00A77E07 /* IndoorsSurfaceBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA703183B70D400C08A43 /* IndoorsSurfaceBuilder.m */; };
+		B4863EDA183D238C00A77E07 /* IndoorsServiceCallbackImp.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA701183B70D400C08A43 /* IndoorsServiceCallbackImp.m */; };
+		B4863EDB183D238E00A77E07 /* IndoorsSurfaceLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA70D183B712400C08A43 /* IndoorsSurfaceLocationManager.m */; };
+		B4863EDD183D240A00A77E07 /* ISPointAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDA719183B72D600C08A43 /* ISPointAnnotationView.m */; };
+		B4DDA786183D161000C08A43 /* IndoorsServiceCallbackImp.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA700183B70D400C08A43 /* IndoorsServiceCallbackImp.h */; };
+		B4DDA787183D161000C08A43 /* IndoorsSurfaceBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA702183B70D400C08A43 /* IndoorsSurfaceBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DDA788183D161000C08A43 /* IndoorsSurfaceDelegates.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA704183B70D400C08A43 /* IndoorsSurfaceDelegates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DDA789183D161000C08A43 /* IndoorsSurfaceEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA705183B70D400C08A43 /* IndoorsSurfaceEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DDA78C183D163200C08A43 /* ISIndoorsSurface.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA72C183B736500C08A43 /* ISIndoorsSurface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DDA78D183D165300C08A43 /* IndoorsSurfaceLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDA70C183B712400C08A43 /* IndoorsSurfaceLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC5A17117A0D83900E5AE13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A17017A0D83900E5AE13 /* Foundation.framework */; };
+		CEC5A1B217A0DDB900E5AE13 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1AE17A0DDB900E5AE13 /* CoreBluetooth.framework */; };
+		CEC5A1B517A0DDB900E5AE13 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1B117A0DDB900E5AE13 /* CoreLocation.framework */; };
+		CEC5A1B717A0DDCC00E5AE13 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1B617A0DDCC00E5AE13 /* CFNetwork.framework */; };
+		CEC5A1BD17A0DDEE00E5AE13 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1BC17A0DDEE00E5AE13 /* libc++.dylib */; };
+		CEC5A1BF17A0DDFA00E5AE13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1BE17A0DDFA00E5AE13 /* UIKit.framework */; };
+		CEC5A1C117A0DE0D00E5AE13 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1C017A0DE0D00E5AE13 /* SystemConfiguration.framework */; };
+		CEC5A1C317A0DE3700E5AE13 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1C217A0DE3700E5AE13 /* libsqlite3.0.dylib */; };
+		CEC5A1CB17A0E38800E5AE13 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1AF17A0DDB900E5AE13 /* CoreFoundation.framework */; };
+		CEC5A1CC17A0E38800E5AE13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1B017A0DDB900E5AE13 /* CoreGraphics.framework */; };
+		CEC5A1CD17A0E38F00E5AE13 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1BA17A0DDE300E5AE13 /* libz.dylib */; };
+		CEC5A1CE17A0E39700E5AE13 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1B817A0DDD600E5AE13 /* QuartzCore.framework */; };
+		CEC5A1CF17A0E3A700E5AE13 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5A1AC17A0DD6B00E5AE13 /* Security.framework */; };
+		E2A41DAB191B69E700F8A732 /* Indoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A41DAA191B69E700F8A732 /* Indoors.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4E826DE183138A800383768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC5A16517A0D83900E5AE13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC5A16C17A0D83900E5AE13;
+			remoteInfo = IndoorsSurface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEC5A16B17A0D83900E5AE13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUIBeaconsPlan.h; path = IndoorsSurface/TUIBeaconsPlan.h; sourceTree = SOURCE_ROOT; };
+		7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUIBeaconsPlan.m; path = IndoorsSurface/TUIBeaconsPlan.m; sourceTree = SOURCE_ROOT; };
+		B4DDA700183B70D400C08A43 /* IndoorsServiceCallbackImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsServiceCallbackImp.h; path = IndoorsSurface/IndoorsServiceCallbackImp.h; sourceTree = SOURCE_ROOT; };
+		B4DDA701183B70D400C08A43 /* IndoorsServiceCallbackImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndoorsServiceCallbackImp.m; path = IndoorsSurface/IndoorsServiceCallbackImp.m; sourceTree = SOURCE_ROOT; };
+		B4DDA702183B70D400C08A43 /* IndoorsSurfaceBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsSurfaceBuilder.h; path = IndoorsSurface/IndoorsSurfaceBuilder.h; sourceTree = SOURCE_ROOT; };
+		B4DDA703183B70D400C08A43 /* IndoorsSurfaceBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndoorsSurfaceBuilder.m; path = IndoorsSurface/IndoorsSurfaceBuilder.m; sourceTree = SOURCE_ROOT; };
+		B4DDA704183B70D400C08A43 /* IndoorsSurfaceDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsSurfaceDelegates.h; path = IndoorsSurface/IndoorsSurfaceDelegates.h; sourceTree = SOURCE_ROOT; };
+		B4DDA705183B70D400C08A43 /* IndoorsSurfaceEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsSurfaceEnums.h; path = IndoorsSurface/IndoorsSurfaceEnums.h; sourceTree = SOURCE_ROOT; };
+		B4DDA70C183B712400C08A43 /* IndoorsSurfaceLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndoorsSurfaceLocationManager.h; path = IndoorsSurface/IndoorsSurfaceLocationManager.h; sourceTree = SOURCE_ROOT; };
+		B4DDA70D183B712400C08A43 /* IndoorsSurfaceLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndoorsSurfaceLocationManager.m; path = IndoorsSurface/IndoorsSurfaceLocationManager.m; sourceTree = SOURCE_ROOT; };
+		B4DDA710183B72AB00C08A43 /* ISCallOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISCallOutView.h; path = IndoorsSurface/ISCallOutView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA711183B72AB00C08A43 /* ISCallOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISCallOutView.m; path = IndoorsSurface/ISCallOutView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA714183B72D600C08A43 /* ISAnnotationDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISAnnotationDetailsView.h; path = IndoorsSurface/ISAnnotationDetailsView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA715183B72D600C08A43 /* ISAnnotationDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISAnnotationDetailsView.m; path = IndoorsSurface/ISAnnotationDetailsView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA716183B72D600C08A43 /* ISAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISAnnotationView.h; path = IndoorsSurface/ISAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA717183B72D600C08A43 /* ISAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISAnnotationView.m; path = IndoorsSurface/ISAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA718183B72D600C08A43 /* ISPointAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISPointAnnotationView.h; path = IndoorsSurface/ISPointAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA719183B72D600C08A43 /* ISPointAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISPointAnnotationView.m; path = IndoorsSurface/ISPointAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA720183B72FB00C08A43 /* ISUserAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISUserAnnotationView.h; path = IndoorsSurface/ISUserAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA721183B72FB00C08A43 /* ISUserAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISUserAnnotationView.m; path = IndoorsSurface/ISUserAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA722183B72FB00C08A43 /* ISUserLocationAccuracyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISUserLocationAccuracyView.h; path = IndoorsSurface/ISUserLocationAccuracyView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA723183B72FB00C08A43 /* ISUserLocationAccuracyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISUserLocationAccuracyView.m; path = IndoorsSurface/ISUserLocationAccuracyView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA728183B731200C08A43 /* ISZoneAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISZoneAnnotation.h; path = IndoorsSurface/ISZoneAnnotation.h; sourceTree = SOURCE_ROOT; };
+		B4DDA729183B731200C08A43 /* ISZoneAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISZoneAnnotation.m; path = IndoorsSurface/ISZoneAnnotation.m; sourceTree = SOURCE_ROOT; };
+		B4DDA72C183B736500C08A43 /* ISIndoorsSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISIndoorsSurface.h; path = IndoorsSurface/ISIndoorsSurface.h; sourceTree = SOURCE_ROOT; };
+		B4DDA72D183B736500C08A43 /* ISIndoorsSurface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISIndoorsSurface.m; path = IndoorsSurface/ISIndoorsSurface.m; sourceTree = SOURCE_ROOT; };
+		B4DDA72E183B736500C08A43 /* ISMapScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISMapScrollView.h; path = IndoorsSurface/ISMapScrollView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA72F183B736500C08A43 /* ISMapScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISMapScrollView.m; path = IndoorsSurface/ISMapScrollView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA730183B736500C08A43 /* ISMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISMapView.h; path = IndoorsSurface/ISMapView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA731183B736500C08A43 /* ISMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISMapView.m; path = IndoorsSurface/ISMapView.m; sourceTree = SOURCE_ROOT; };
+		B4DDA738183B737900C08A43 /* ISMapRoutingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISMapRoutingView.h; path = IndoorsSurface/ISMapRoutingView.h; sourceTree = SOURCE_ROOT; };
+		B4DDA739183B737900C08A43 /* ISMapRoutingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISMapRoutingView.m; path = IndoorsSurface/ISMapRoutingView.m; sourceTree = SOURCE_ROOT; };
+		CEC5A16D17A0D83900E5AE13 /* libIndoorsSurface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIndoorsSurface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC5A17017A0D83900E5AE13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEC5A17417A0D83900E5AE13 /* IndoorsSurface-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorsSurface-Prefix.pch"; sourceTree = "<group>"; };
+		CEC5A1AC17A0DD6B00E5AE13 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CEC5A1AE17A0DDB900E5AE13 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CEC5A1AF17A0DDB900E5AE13 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CEC5A1B017A0DDB900E5AE13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEC5A1B117A0DDB900E5AE13 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEC5A1B617A0DDCC00E5AE13 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CEC5A1B817A0DDD600E5AE13 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEC5A1BA17A0DDE300E5AE13 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CEC5A1BC17A0DDEE00E5AE13 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CEC5A1BE17A0DDFA00E5AE13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEC5A1C017A0DE0D00E5AE13 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CEC5A1C217A0DE3700E5AE13 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E2A41DAA191B69E700F8A732 /* Indoors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Indoors.framework; path = ../IndoorsViewerIOS/Indoors.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC5A16A17A0D83900E5AE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC5A1CF17A0E3A700E5AE13 /* Security.framework in Frameworks */,
+				E2A41DAB191B69E700F8A732 /* Indoors.framework in Frameworks */,
+				CEC5A1CE17A0E39700E5AE13 /* QuartzCore.framework in Frameworks */,
+				CEC5A1CD17A0E38F00E5AE13 /* libz.dylib in Frameworks */,
+				CEC5A1CB17A0E38800E5AE13 /* CoreFoundation.framework in Frameworks */,
+				CEC5A1CC17A0E38800E5AE13 /* CoreGraphics.framework in Frameworks */,
+				CEC5A1C317A0DE3700E5AE13 /* libsqlite3.0.dylib in Frameworks */,
+				CEC5A1C117A0DE0D00E5AE13 /* SystemConfiguration.framework in Frameworks */,
+				CEC5A1BF17A0DDFA00E5AE13 /* UIKit.framework in Frameworks */,
+				CEC5A1BD17A0DDEE00E5AE13 /* libc++.dylib in Frameworks */,
+				CEC5A1B717A0DDCC00E5AE13 /* CFNetwork.framework in Frameworks */,
+				CEC5A1B217A0DDB900E5AE13 /* CoreBluetooth.framework in Frameworks */,
+				CEC5A1B517A0DDB900E5AE13 /* CoreLocation.framework in Frameworks */,
+				CEC5A17117A0D83900E5AE13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE101FB817B7702D00E1F99E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE101FB917B7702D00E1F99E /* Builder */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CE101FB917B7702D00E1F99E /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA700183B70D400C08A43 /* IndoorsServiceCallbackImp.h */,
+				B4DDA701183B70D400C08A43 /* IndoorsServiceCallbackImp.m */,
+				B4DDA702183B70D400C08A43 /* IndoorsSurfaceBuilder.h */,
+				B4DDA703183B70D400C08A43 /* IndoorsSurfaceBuilder.m */,
+				B4DDA704183B70D400C08A43 /* IndoorsSurfaceDelegates.h */,
+				B4DDA705183B70D400C08A43 /* IndoorsSurfaceEnums.h */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		CEC5A16417A0D83900E5AE13 = {
+			isa = PBXGroup;
+			children = (
+				CEC5A17217A0D83900E5AE13 /* IndoorsSurface */,
+				CEC5A16F17A0D83900E5AE13 /* Frameworks */,
+				CEC5A16E17A0D83900E5AE13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC5A16E17A0D83900E5AE13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5A16D17A0D83900E5AE13 /* libIndoorsSurface.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC5A16F17A0D83900E5AE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A41DAA191B69E700F8A732 /* Indoors.framework */,
+				CEC5A1C217A0DE3700E5AE13 /* libsqlite3.0.dylib */,
+				CEC5A1C017A0DE0D00E5AE13 /* SystemConfiguration.framework */,
+				CEC5A1BE17A0DDFA00E5AE13 /* UIKit.framework */,
+				CEC5A1BC17A0DDEE00E5AE13 /* libc++.dylib */,
+				CEC5A1BA17A0DDE300E5AE13 /* libz.dylib */,
+				CEC5A1B817A0DDD600E5AE13 /* QuartzCore.framework */,
+				CEC5A1B617A0DDCC00E5AE13 /* CFNetwork.framework */,
+				CEC5A1AE17A0DDB900E5AE13 /* CoreBluetooth.framework */,
+				CEC5A1AF17A0DDB900E5AE13 /* CoreFoundation.framework */,
+				CEC5A1B017A0DDB900E5AE13 /* CoreGraphics.framework */,
+				CEC5A1B117A0DDB900E5AE13 /* CoreLocation.framework */,
+				CEC5A1AC17A0DD6B00E5AE13 /* Security.framework */,
+				CEC5A17017A0D83900E5AE13 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC5A17217A0D83900E5AE13 /* IndoorsSurface */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5A18717A0DCA100E5AE13 /* Classes */,
+				CEC5A17317A0D83900E5AE13 /* Supporting Files */,
+			);
+			path = IndoorsSurface;
+			sourceTree = "<group>";
+		};
+		CEC5A17317A0D83900E5AE13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5A17417A0D83900E5AE13 /* IndoorsSurface-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC5A18717A0DCA100E5AE13 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE101FB817B7702D00E1F99E /* API */,
+				CEC5A1D017A0E44400E5AE13 /* Controller */,
+				CEC5A18817A0DCA100E5AE13 /* Model */,
+				CEC5A18917A0DCA100E5AE13 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CEC5A18817A0DCA100E5AE13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7606769C1959B6A200FE1527 /* TUIBeaconsPlan.h */,
+				7606769D1959B6A200FE1527 /* TUIBeaconsPlan.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC5A18917A0DCA100E5AE13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1548117A3B27000B81C62 /* Callout */,
+				CEC5A18A17A0DCA100E5AE13 /* Annotations */,
+				CEC5A19917A0DCA100E5AE13 /* Map */,
+				CEC5A19E17A0DCA100E5AE13 /* Routing */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC5A18A17A0DCA100E5AE13 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA714183B72D600C08A43 /* ISAnnotationDetailsView.h */,
+				B4DDA715183B72D600C08A43 /* ISAnnotationDetailsView.m */,
+				B4DDA716183B72D600C08A43 /* ISAnnotationView.h */,
+				B4DDA717183B72D600C08A43 /* ISAnnotationView.m */,
+				B4DDA718183B72D600C08A43 /* ISPointAnnotationView.h */,
+				B4DDA719183B72D600C08A43 /* ISPointAnnotationView.m */,
+				CEC5A19117A0DCA100E5AE13 /* UserLocation */,
+				CEC5A19617A0DCA100E5AE13 /* Zone */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		CEC5A19117A0DCA100E5AE13 /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA720183B72FB00C08A43 /* ISUserAnnotationView.h */,
+				B4DDA721183B72FB00C08A43 /* ISUserAnnotationView.m */,
+				B4DDA722183B72FB00C08A43 /* ISUserLocationAccuracyView.h */,
+				B4DDA723183B72FB00C08A43 /* ISUserLocationAccuracyView.m */,
+			);
+			path = UserLocation;
+			sourceTree = "<group>";
+		};
+		CEC5A19617A0DCA100E5AE13 /* Zone */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA728183B731200C08A43 /* ISZoneAnnotation.h */,
+				B4DDA729183B731200C08A43 /* ISZoneAnnotation.m */,
+			);
+			path = Zone;
+			sourceTree = "<group>";
+		};
+		CEC5A19917A0DCA100E5AE13 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA72C183B736500C08A43 /* ISIndoorsSurface.h */,
+				B4DDA72D183B736500C08A43 /* ISIndoorsSurface.m */,
+				B4DDA72E183B736500C08A43 /* ISMapScrollView.h */,
+				B4DDA72F183B736500C08A43 /* ISMapScrollView.m */,
+				B4DDA730183B736500C08A43 /* ISMapView.h */,
+				B4DDA731183B736500C08A43 /* ISMapView.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		CEC5A19E17A0DCA100E5AE13 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA738183B737900C08A43 /* ISMapRoutingView.h */,
+				B4DDA739183B737900C08A43 /* ISMapRoutingView.m */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		CEC5A1D017A0E44400E5AE13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA70C183B712400C08A43 /* IndoorsSurfaceLocationManager.h */,
+				B4DDA70D183B712400C08A43 /* IndoorsSurfaceLocationManager.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEF1548117A3B27000B81C62 /* Callout */ = {
+			isa = PBXGroup;
+			children = (
+				B4DDA710183B72AB00C08A43 /* ISCallOutView.h */,
+				B4DDA711183B72AB00C08A43 /* ISCallOutView.m */,
+			);
+			path = Callout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B4E826D5183136CC00383768 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4DDA787183D161000C08A43 /* IndoorsSurfaceBuilder.h in Headers */,
+				B4DDA788183D161000C08A43 /* IndoorsSurfaceDelegates.h in Headers */,
+				B42382E31919303200FEB52B /* ISAnnotationView.h in Headers */,
+				B4DDA789183D161000C08A43 /* IndoorsSurfaceEnums.h in Headers */,
+				B4DDA78D183D165300C08A43 /* IndoorsSurfaceLocationManager.h in Headers */,
+				B4DDA78C183D163200C08A43 /* ISIndoorsSurface.h in Headers */,
+				B42382E01919302600FEB52B /* ISMapScrollView.h in Headers */,
+				7606769E1959B6A200FE1527 /* TUIBeaconsPlan.h in Headers */,
+				B4DDA786183D161000C08A43 /* IndoorsServiceCallbackImp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CEC5A16C17A0D83900E5AE13 /* IndoorsSurface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC5A17B17A0D83900E5AE13 /* Build configuration list for PBXNativeTarget "IndoorsSurface" */;
+			buildPhases = (
+				CEC5A16917A0D83900E5AE13 /* Sources */,
+				CEC5A16A17A0D83900E5AE13 /* Frameworks */,
+				CEC5A16B17A0D83900E5AE13 /* CopyFiles */,
+				B4E826D5183136CC00383768 /* Headers */,
+				B4E826D9183137F300383768 /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndoorsSurface;
+			productName = IndoorsSurface;
+			productReference = CEC5A16D17A0D83900E5AE13 /* libIndoorsSurface.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC5A16517A0D83900E5AE13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Indoors GmbH";
+			};
+			buildConfigurationList = CEC5A16817A0D83900E5AE13 /* Build configuration list for PBXProject "IndoorsSurface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEC5A16417A0D83900E5AE13;
+			productRefGroup = CEC5A16E17A0D83900E5AE13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC5A16C17A0D83900E5AE13 /* IndoorsSurface */,
+				B4E826DA183138A000383768 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4E826D9183137F300383768 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		B4E826E0183138CB00383768 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC5A16917A0D83900E5AE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4863ED3183D235400A77E07 /* ISUserLocationAccuracyView.m in Sources */,
+				B4863EDB183D238E00A77E07 /* IndoorsSurfaceLocationManager.m in Sources */,
+				B4863ED9183D238A00A77E07 /* IndoorsSurfaceBuilder.m in Sources */,
+				B4863ED8183D238400A77E07 /* ISCallOutView.m in Sources */,
+				760676971959B2ED00FE1527 /* ISIndoorsSurface.m in Sources */,
+				7606769F1959B6A200FE1527 /* TUIBeaconsPlan.m in Sources */,
+				B4863EDA183D238C00A77E07 /* IndoorsServiceCallbackImp.m in Sources */,
+				B4863ED2183D234F00A77E07 /* ISUserAnnotationView.m in Sources */,
+				B4863ED5183D236900A77E07 /* ISMapView.m in Sources */,
+				B4863ED6183D236F00A77E07 /* ISMapRoutingView.m in Sources */,
+				B4863ECE183D234200A77E07 /* ISAnnotationDetailsView.m in Sources */,
+				B4863ED1183D234700A77E07 /* ISAnnotationView.m in Sources */,
+				B4863ED4183D235E00A77E07 /* ISMapScrollView.m in Sources */,
+				B4863EDD183D240A00A77E07 /* ISPointAnnotationView.m in Sources */,
+				B4863ED7183D238000A77E07 /* ISZoneAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4E826DF183138A800383768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC5A16C17A0D83900E5AE13 /* IndoorsSurface */;
+			targetProxy = B4E826DE183138A800383768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B412977D1886D7F900C8C00D /* FrameworkRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = FrameworkRelease;
+		};
+		B412977E1886D7F900C8C00D /* FrameworkRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/IndoorsSurface.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)../IndoorsLibraryIOS/**",
+					"$(PROJECT_DIR)",
+					../IndoorsViewerIOS,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorsSurface/IndoorsSurface-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)../IndoorsLibraryIOS/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+			};
+			name = FrameworkRelease;
+		};
+		B412977F1886D7F900C8C00D /* FrameworkRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = FrameworkRelease;
+		};
+		B4E826DC183138A000383768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4E826DD183138A000383768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEC5A17917A0D83900E5AE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		CEC5A17A17A0D83900E5AE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC5A17C17A0D83900E5AE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/IndoorsSurface.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)../IndoorsLibraryIOS/**",
+					"$(PROJECT_DIR)",
+					../IndoorsViewerIOS,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorsSurface/IndoorsSurface-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)../IndoorsLibraryIOS/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
+			};
+			name = Debug;
+		};
+		CEC5A17D17A0D83900E5AE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/IndoorsSurface.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)../IndoorsLibraryIOS/**",
+					"$(PROJECT_DIR)",
+					../IndoorsViewerIOS,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IndoorsSurface/IndoorsSurface-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)../IndoorsLibraryIOS/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4E826DB183138A000383768 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E826DC183138A000383768 /* Debug */,
+				B4E826DD183138A000383768 /* Release */,
+				B412977F1886D7F900C8C00D /* FrameworkRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC5A16817A0D83900E5AE13 /* Build configuration list for PBXProject "IndoorsSurface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC5A17917A0D83900E5AE13 /* Debug */,
+				CEC5A17A17A0D83900E5AE13 /* Release */,
+				B412977D1886D7F900C8C00D /* FrameworkRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC5A17B17A0D83900E5AE13 /* Build configuration list for PBXNativeTarget "IndoorsSurface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC5A17C17A0D83900E5AE13 /* Debug */,
+				CEC5A17D17A0D83900E5AE13 /* Release */,
+				B412977E1886D7F900C8C00D /* FrameworkRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEC5A16517A0D83900E5AE13 /* Project object */;
+}

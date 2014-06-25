@@ -1,0 +1,35 @@
+The indoo.rs Viewer app and indoo.rs iOS SDK include a variety of third party libraries listed below, class-divided by their license.
+
+	1. Apache License version 2.0 (http://www.apache.org/licenses/)
+		1.1 zxing
+			https://github.com/zxing/zxing
+		
+	
+	2. BSD 2-Clause License (http://opensource.org/licenses/BSD-2-Clause)
+		2.1 NSLogger
+			https://github.com/fpillet/NSLogger
+			
+	3. Crittercism, Inc. Service Terms and Conditions (https://www.crittercism.com/terms-services/)
+		3.1 Crittercism
+			https://www.crittercism.com
+				
+	4. MIT License (http://opensource.org/licenses/MIT)
+		4.1 FMDB
+			https://github.com/ccgus/fmdb
+			
+		4.2 MBProgressHUD
+			https://github.com/jdg/MBProgressHUD
+	
+		4.3 MZFormSheetController
+			https://github.com/m1entus/MZFormSheetController
+			
+		4.4 SSZipArchive
+			https://github.com/soffes/ssziparchive
+				
+		4.5 Toast
+			https://github.com/scalessec/Toast
+	
+	
+	5. zlib License (http://zlib.net/zlib_license.html)
+		5.1 Minizip
+			http://www.winimage.com/zLibDll/minizip.html

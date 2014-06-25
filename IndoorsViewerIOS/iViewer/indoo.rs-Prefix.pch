@@ -1,0 +1,82 @@
+//
+// Prefix header for all source files of the 'iViewer' target in the 'iViewer' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Constants.h"
+#endif
+
+#define RGB(hex) [UIColor colorWithRed:(hex >> 16)/255.0 green:((hex >> 8) & 0xFF)/255.0 blue:(hex & 0xFF)/255.0 alpha:1]
+
+
+/**
+ This struct is used for doing pixel-tasting. We get CoreGraphics to create a bitmap context wherein the memory representation looks like this struct, then we cast the pointer to that memory to be of this struct's type. Pretty self-explanatory.
+ */
+typedef struct _TURGBAPixel {
+	UInt8 red;
+	UInt8 green;
+	UInt8 blue;
+	UInt8 alpha;
+} TURGBAPixel;
+
+/**
+ Defined here, used as part of the pixel-tasting code. Helps make sure the memory representation of the bitmap context is made up of stuff that looks just like TURGBAPixel.
+ */
+#define TURGBABytesPerPixel (4)
+
+/**
+ This tests if a pixel is black. Here "black" means alpha isn't at zero (AKA: it's at least partially opaque) and r == g == b == 0.
+ */
+#define TURGBAPixelIsBlack(PIXEL) (((PIXEL.red == 0) && (PIXEL.green == 0) && (PIXEL.blue == 0) && (PIXEL.alpha != 0))?(YES):(NO))
+
+#define TUTruncateBelow(VALUE, FLOOR) ((( VALUE ) < ( FLOOR ))?(( FLOOR )):(( VALUE )))
+#define TUTruncateAbove(VALUE, CEILING) ((( VALUE ) > ( CEILING ))?(( CEILING )):(( VALUE )))
+#define TUTruncateWithin(VALUE, FLOOR, CEILING) ((( VALUE ) < ( FLOOR ))?(( FLOOR )):((( VALUE ) > ( CEILING ))?(( CEILING )):(( VALUE ))))
+#define TUTruncateAtZero(VALUE) TUTruncateBelow(VALUE, 0.0f)
+
+#define TUForceYesOrNo(ABOOL) ((ABOOL)?(YES):(NO))
+#define TUYesOrNoString(ABOOL) ((( ABOOL ))?(@"YES"):(@"NO"))
+
+#define TUWithinEpsilon(EPSILON, X, Y) TUForceYesOrNo((((X-Y) > (-1.0f * EPSILON)) || ((X-Y) < EPSILON)))
+
+#define STRINGIFY2( x) #x
+#define STRINGIFY(x) STRINGIFY2(x)
+#define PASTE2( a, b) a##b
+#define PASTE( a, b) PASTE2( a, b)
+#define PASSTHROUGH(X) X
+
+#define NPOBJCStringOfToken(TOKEN) PASSTHROUGH(PASTE( PASSTHROUGH(@), PASSTHROUGH(STRINGIFY(TOKEN))))
+
+#define NPSelfProperty(PROP) ([self PROP])
+
+#define NPAssertPropertyNonNil(PROP) NPAssert((NPSelfProperty(PROP) != nil), ([NSString stringWithFormat:@"self.%s should never be nil.",( (#PROP) )]))
+
+#define NPParameterAssertNotNilConformsToProtocol(OBJ,PROT) NPParameterAssert((OBJ != nil) && ([OBJ conformsToProtocol:@protocol(PROT)]))
+#define NPParameterAssertNotNilIsKindOfClass(OBJ,CLASS) NPParameterAssert((OBJ != nil) && ([OBJ isKindOfClass:[CLASS class]]))
+
+#define NPAssertNilOrConformsToProtocol(OBJ,PROT) NPAssert(((OBJ == nil) || ((OBJ != nil) && [OBJ conformsToProtocol:@protocol(PROT)])),([NSString stringWithFormat:@"Variable %s must either be nil or conform to %s protocol.", ( (#OBJ) ), ( (#PROT) )]))
+#define NPAssertNilOrIsKindOfClass(OBJ,CLASS) NPAssert(((OBJ == nil) || ((OBJ != nil) && [OBJ isKindOfClass:[CLASS class]])), ([NSString stringWithFormat:@"Variable %s must either be nil or be kind of %s class.", (#OBJ), (#CLASS)]))
+
+#define NPAssertWithinEpsilon(EPSILON,X,Y) NPAssert( (((X-Y) > (-1.0f * EPSILON)) || ((X-Y) < EPSILON)),([NSString stringWithFormat:@"Should have (%s,%s) within %f but instead (%f,%f).",#X,#Y,EPSILON,X,Y]))
+#define NPAssertWithinOne(X,Y) NPAssertWithinEpsilon(1.0f,X,Y)
+
+#define NPAssertThreeSubSizesSumCorrectlyOnOneAxis(AXIS,MASTERSIZE,SIZE_ONE,SIZE_TWO,SIZE_THREE) NPAssertWithinOne(MASTERSIZE.AXIS,( SIZE_ONE.AXIS + SIZE_TWO.AXIS + SIZE_THREE.AXIS ))
+#define NPAssertCorrectSubsizeWidthDecomposition(MASTER,SIZE_ONE,SIZE_TWO,SIZE_THREE) NPAssertThreeSubSizesSumCorrectlyOnOneAxis(width, MASTER, SIZE_ONE, SIZE_TWO, SIZE_THREE)
+#define NPAssertCorrectSubsizeHeightDecomposition(MASTER,SIZE_ONE,SIZE_TWO,SIZE_THREE) NPAssertThreeSubSizesSumCorrectlyOnOneAxis(height, MASTER, SIZE_ONE, SIZE_TWO, SIZE_THREE)
+
+#define NPAssertCorrectSubimageWidthDecomposition(MASTER,IMAGE_ONE,IMAGE_TWO,IMAGE_THREE) NPAssertCorrectSubsizeWidthDecomposition([MASTER size],[IMAGE_ONE size],[IMAGE_TWO size],[IMAGE_THREE size])
+#define NPAssertCorrectSubimageHeightDecomposition(MASTER,IMAGE_ONE,IMAGE_TWO,IMAGE_THREE) NPAssertCorrectSubsizeWidthDecomposition([MASTER size],[IMAGE_ONE size],[IMAGE_TWO size],[IMAGE_THREE size])
+
+#ifdef IMAGEDEBUG
+#define IMLog(IMAGE, IMAGENAME) TUImageLog(IMAGE,[[NSString stringWithFormat:@"debugImage.%.0f.%u.",[NSDate timeIntervalSinceReferenceDate],((NSUInteger) rand())] stringByAppendingString:( IMAGENAME )])
+#else
+#define IMLog(IMAGE, IMAGENAME)
+#endif

@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'IndoorsSurface' target in the 'IndoorsSurface' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define RGB(hex) [UIColor colorWithRed:(hex >> 16)/255.0 green:((hex >> 8) & 0xFF)/255.0 blue:(hex & 0xFF)/255.0 alpha:1]
