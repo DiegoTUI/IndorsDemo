@@ -227,6 +227,7 @@
     } else {
         NSLog(@"updated user position - x: %d - y: %d", userPosition.x, userPosition.y);
         [self.mapScrollView setUserPosition:userPosition];
+        [self.mapScrollView setMapCenterWithCoordinate:userPosition];
     }
     
     if (isInitialLocationUpdates) {
@@ -256,44 +257,6 @@
     [_beaconManager feedWithBeacons:beacons];
     
     [self updateUserPosition:[_beaconManager userLocation]];
-}
-
-- (IDSCoordinate *)userPositionFromBeacons:(NSArray *)beacons
-{
-    // return nil if the array is empty
-    if (beacons.count == 0)
-    {
-        return nil;
-    }
-    // return the beacon's location if there is only one beacon
-    if (beacons.count == 1)
-    {
-        CGPoint beaconLocation = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)beacons[0] minor] stringValue]];
-        return [[IDSCoordinate alloc] initWithX:beaconLocation.x andY:beaconLocation.y andFloorLevel:5];
-    }
-    // more than one beacon in the array
-    // find the two closest beacons
-    NSArray *sortedBeacons = [beacons sortedArrayUsingComparator:^NSComparisonResult(CLBeacon *a, CLBeacon *b) {
-        if (a.rssi > b.rssi)
-        {
-            return NSOrderedAscending;
-        }
-        return NSOrderedDescending;
-    }];
-    NSInteger rssi1 = -[(CLBeacon *)sortedBeacons[0] rssi];
-    NSInteger rssi2 = -[(CLBeacon *)sortedBeacons[1] rssi];
-    
-    NSLog(@"rssi1-%@: %d - %f", [(CLBeacon *)sortedBeacons[0] minor], rssi1, [(CLBeacon *)sortedBeacons[0] accuracy]);
-    NSLog(@"rssi2-%@: %d - %f", [(CLBeacon *)sortedBeacons[1] minor], rssi2, [(CLBeacon *)sortedBeacons[1] accuracy]);
-    
-    
-    CGPoint beaconLocation1 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[0] minor] stringValue]];
-    CGPoint beaconLocation2 = [[TUIBeaconsPlan sharedInstance] locationForBeacon:[[(CLBeacon *)sortedBeacons[1] minor] stringValue]];
-    
-    NSInteger x = ((rssi1 * beaconLocation1.x) + (rssi2 * beaconLocation2.x)) / (rssi1 + rssi2);
-    NSInteger y = ((rssi1 * beaconLocation1.y) + (rssi2 * beaconLocation2.y)) / (rssi1 + rssi2);
-    
-    return [[IDSCoordinate alloc] initWithX:x andY:y andFloorLevel:5];
 }
 
 @end
